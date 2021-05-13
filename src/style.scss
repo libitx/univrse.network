@@ -1,0 +1,89 @@
+body {
+  background-color: #121111;
+  background-image: radial-gradient(ellipse 66% 16rem at top center, rgba(#fff, 0.2), rgba(#fff, 0.05) 50%, rgba(#fff, 0));
+  background-repeat: no-repeat;
+}
+
+
+.markdown-body {
+  h1 {
+    margin: 0 0 3rem;
+    font-size: 3rem;
+    line-height: 1.25;
+    font-weight: 100;
+    color: rgba(#fff, 0.7);
+  }
+
+  h2 {
+    margin: 4rem 0 1rem;
+    line-height: 1.25;
+    font-weight: 600;
+    color: rgba(#F4F4F4, 0.85);
+  }
+
+  h3 {
+    margin: 2.5rem 0 1rem;
+    line-height: 1.25;
+    font-weight: 600;
+    color: rgba(#F4F4F4, 0.8);
+  }
+
+  h4 {
+    font-weight: 700;
+  }
+
+  p, ul, ol, h4 {
+    max-width: 34em;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: rgba(#F4F4F4, 0.8);
+  }
+
+  table {
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 300;
+    color: rgba(#F4F4F4, 0.8);
+    border-collapse: collapse;
+    border-bottom: 2px solid rgba(#fff, 0.4);
+  }
+
+  tr {
+    border-bottom: 1px solid rgba(#fff, 0.2);
+  }
+
+  thead tr {
+    border-width: 2px;
+    border-color: rgba(#fff, 0.4) !important;
+  }
+
+  th, td {
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  th {
+    font-weight: 600;
+  }
+
+  strong, b {
+    font-weight: 600;
+    color: rgba(#F4F4F4, 0.8);
+  }
+
+  a {
+    font-weight: 400;
+    color: rgba(#96CCFF, 0.9);
+    text-decoration: underline;
+    transition: color .15s ease-in;
+    &:hover {
+      color: #FF41B4;
+    }
+  }
+}
+
+@import './prism-atom-dark.css'
