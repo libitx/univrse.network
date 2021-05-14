@@ -1,11 +1,11 @@
 <template>
   <div class="ph2 ba b--white-20">
 
-    <div class="flex items-center mv2 bg-white-10">
-      <div class="flex-auto pa2 code f7 fw3 white-70">
+    <div class="flex-ns items-center mv2 pv2 bg-white-10">
+      <div class="flex-auto-ns ph2 mb1 mb0-ns code f7 fw3 white-70 overflow-hidden">
         <a class="link white-70 hover-white" :href="wocLink" target="_blank">{{ out }}</a>
       </div>
-      <div class="pa2 code f7 fw3 white-50">{{ dateTime }}</div>
+      <div class="ph2 code f7 fw3 white-50">{{ dateTime }}</div>
     </div>
 
     <div class="flex mv2 bg-white-10">

@@ -1,41 +1,45 @@
 <template>
-  <div class="mb3 pv4">
-    <h1 class="mt0 mb2 f-subheadline fw1 ttu tracked-mega white-90 tc">
-      <router-link to="/">
-        <img src="/univrse.png" width="235" alt="Univrse" />
-      </router-link>
-    </h1>
-    <p class="ma0 f7 fw3 tc">
-      <router-link to="/" class="link white-80 hover-hot-pink">&larr; Back to home</router-link>
-    </p>
-  </div>
+  <div class="ph4">
+    <div class="mb3 pv4">
+      <h1 class="mt0 mb2 f-subheadline fw1 ttu tracked-mega white-90 tc">
+        <router-link to="/">
+          <img src="/univrse.png" width="235" alt="Univrse" />
+        </router-link>
+      </h1>
+      <p class="ma0 f7 fw3 tc">
+        <router-link to="/" class="link white-80 hover-hot-pink">&larr; Back to home</router-link>
+      </p>
+    </div>
 
-  <div class="mw7 pv3 center">
-    <div class="">
-      <label for="search" class="db mb2 f7 fw3 tracked lh-copy white-70 tc">Search by TXID</label>
-      <input type="text" id="search"
-        class="input-reset w-100 pa2 ph3 code f5 lh-copy white bg-transparent ba b--white-30 br2"
-        v-model="txid">
+    <div class="mw7 pv3 center">
+      <div class="">
+        <label for="search" class="db mb2 f7 fw3 tracked lh-copy white-70 tc">Search by TXID</label>
+        <input type="text" id="search"
+          class="input-reset w-100 pa2 ph3 code f5 lh-copy white bg-transparent ba b--white-30 br2"
+          v-model="txid">
+      </div>
     </div>
   </div>
 
-  <div class="mw7 pv3 center">
-    <Builder class="mb4" />
-    <ul class="list ma0 mv3 pa0">
-      <li v-for="e in envs" :key="e.out" class="mb3">
-        <Envelope :env="e.env" :out="e.out" :timestamp="e.t" />
-      </li>
-    </ul>
-  </div>
+  <div class="ph3">
+    <div class="mw7 pv3 center">
+      <Builder class="mb4" />
+      <ul class="list ma0 mv3 pa0">
+        <li v-for="e in envs" :key="e.out" class="mb3">
+          <Envelope :env="e.env" :out="e.out" :timestamp="e.t" />
+        </li>
+      </ul>
+    </div>
 
-  <div class="mw7 pt4 pb3 center">
-    <p class="mv1 f7 lh-copy fw3 white-60 tc">
-      Univrse Explorer powered by Bitbus, Bitsocket and BitFS.
-    </p>
-    <p class="mv1 f7 lh-copy fw3 white-60 tc">
-      &copy; Copyright 2021 Chronos Labs Ltd
-    </p>
-  </div>
+    <div class="mw7 pt4 pb3 center">
+      <p class="mv1 f7 lh-copy fw3 white-60 tc">
+        Univrse Explorer powered by Bitbus, Bitsocket and BitFS.
+      </p>
+      <p class="mv1 f7 lh-copy fw3 white-60 tc">
+        &copy; Copyright 2021 Chronos Labs Ltd
+      </p>
+    </div>
+  </div>  
 </template>
 
 <script>

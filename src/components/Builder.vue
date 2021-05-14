@@ -7,7 +7,7 @@
 
     <div class="fixed top-0 bottom-0 left-0 right-0 z-4 flex flex-column justify-center bg-black-60 | modal-bg"
       @click.self="close()">
-      <div class="w-100 mw7 center ph5 | modal">
+      <div class="w-100 mw7 center ph3 ph4-ns ph5-l | modal">
         <div class="pa4 bg-black ba b--white-40">
           <p class="mt0 mb4 f6 lh-copy fw3 white-80 tc">
             Try <span class="white">Univrse</span> out by creating your own

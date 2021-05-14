@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "rsync -av dist/ chronos@178.62.63.45:~/univ"
   },
   "dependencies": {
     "prismjs": "^1.23.0",
